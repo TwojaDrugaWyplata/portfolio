@@ -1,0 +1,32 @@
+.navigation {
+    background-color: darkgray;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.navigation__menu {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.navigation__link {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: whitesmoke;
+    transition: .2s;
+}
+
+.navigation__link:hover {
+    color: rgb(255, 190, 190);
+}
+
+.header__mainText, information__header, .about__header {
+    color: burlywood;
+    font-size: 25px;
+}

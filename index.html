@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próba</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/navigation.css">
+    <link rel="stylesheet" href="style/game.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/information.css">
+    <link rel="stylesheet" href="style/gamer.css">
+    <link rel="stylesheet" href="style/hobby.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <script src="js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Merienda:400,700&amp;subset=latin-ext"
+        rel="stylesheet">
+</head>
+
+<body class="container">
+    <header>
+        <h1 class="header__mainText">YouCode 4 tydzień BEM</h1>
+
+        <nav>
+            <ul class="navigation__menu">
+                <li class="navigation__item"><a class="navigation__link" href="#about">O mnie</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#information">Gry</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#gamer">Umiejętności</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#hobby">Zainteresowania</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="game game--closed">
+        <button class="game__menu">Graj :)</button>
+        <button class="game__menu--close">zamknij</button>
+        <h2 class="game__header">Skontaktuj się ze mną. Gdy chcesz zagrać</h2>
+
+    </aside>
+    <main class="main">
+        <section class="main__header">
+            <img class="profile__image" src="https://i.postimg.cc/LsrhztQt/pawel.jpg" alt="Paweł Szymczak">
+            <p><button class="change__button">Zmień kolor tła</button></p>
+        </section>
+
+        <section class="about main" id="about">
+            <header class="about">
+                <h2 class="about__header">O mnie</h2>
+
+                <p class="about__text">Edytowane dla 4 tygodnia:"Kilka faktów z 3 tygodnia dużo zagwostek na tym etapie
+                    :), lecz idziemy dalej nauczony złym
+                    doświadczeniem w Csie są komentarze do wykonywanych klas"</p>
+            </header>
+        </section>
+        <section class="information main" id="information">
+            <h2 class="information__header">Informacje o mnie</h2>
+            <ul>
+                <li><a href="#">O mnie</a>
+                    <ul>
+                        <li><a href="#">Zainteresowania</a></li>
+                        <li><a href="#">Stan umysłu :)</a></li>
+                        <li><a href="#">Filmy :)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Hobby</a>
+                    <ul>
+                        <li><a href="#">Hobby1</a></li>
+                        <li><a href="#">Hobby2</a></li>
+                        <li><a href="#">Hobby3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kontakt</a>
+                    <ul>
+                        <li><a href="#">FB</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkId</a></li>
+                    </ul>
+            </ul>
+
+            <section class="gamer main" id="gamer">
+                <h2 class="gamer__header">Gry:</h2>
+                <div class="tableContainer">
+                    <table class="table">
+                        <caption class="tableTitle">Jakie frakcje i jakie były tego skutki</caption>
+                        <tr class="tableRow">
+                            <th class="tableCell tableHeader" scope="col">Frakcja</th>
+                            <th class="tableCell tableHeader" scope="col">Ilośc gier</th>
+                            <th class="tableCell tableHeader" scope="col">Wynik</th>
+                        </tr>
+                        <tr class="tableRow">
+                            <th class="tableCell tableHeader" scope="row">Ionia</th>
+                            <td class="tableCell" rowspan="2"> 18 </td>
+                            <td class="tableCell" rowspan="2"> 16 wygranych - 2 przegranych</td>
+                        </tr>
+                        <tr class="tableRow">
+                            <th class="tableCell tableHeader" scope="row">Frejlord</th>
+                        </tr>
+                        <tr class="tableRow">
+                            <th class="tableCell tableHeader" scope="row">Piltovern</th>
+                            <td class="tableCell"> 19 </td>
+                            <td class="tableCell"> 13 wygranych - 6 przegranych</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section class="hobby main" id="hobby">
+                <h2 class="hobby__header">Zainteresowania:</h2>
+                <ul>
+                    <li>
+                        Gry
+                    </li>
+                    <li>
+                        BJJ
+                    </li>
+                    <li>
+                        Psychologia
+                    </li>
+
+                </ul>
+            </section>
+    </main>
+    <footer class="footer">
+        &copy; Wszelkie prawa zastrzeżone 2020
+    </footer>
+</body>

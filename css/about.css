@@ -1,0 +1,18 @@
+.about {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__header {
+    margin: 25px auto;
+    font-size: 45px;
+}
+
+.about__text {
+    line-height: 1.5;
+    font-size: 22px;
+    text-shadow: 1px 2px 1px white;
+}

@@ -1,0 +1,12 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+.header__mainText {
+    text-align: center;
+}
