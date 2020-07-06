@@ -1,157 +1,228 @@
 html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *, ::before, ::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
+
+.header__mainText {
+    text-align: center;
+}
+
+/* plik container.css */
 
 .container {
-  background-color: goldenrod;
-  margin: 0;
-  padding: 0;
-  font-family: "Lucida", serif;
+    background-color: goldenrod;
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida", serif;
 }
 
-.main {
-  max-width: 1000px;
-  margin: 0 auto;
-}
+/* plik navigation.css */
 
 .navigation {
-  list-style-type: none;
-  /* próba ognia*/
-  overflow: hidden;
-  background-color: #333;
-  /* próba ognia*/
+    background-color: darkgray;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
-/* próba ognia*/
-
-.navigation a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  /* próba ognia*/
-}
-
-.navigationItem {
-  display: inline-block;
-  margin: 15px;
-  border: 1px solid transparent;
+.navigation__menu {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    margin: 0;
+    justify-content: space-evenly;
 }
 
 .navigation__link {
-  text-decoration: none;
-  color: #45af;
-}
-
-.navigation__link:focus {
-  color: #582485;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: whitesmoke;
+    transition: .2s;
 }
 
 .navigation__link:hover {
-  border-bottom: 1px solid burlywood;
+    color: rgb(255, 190, 190);
 }
 
-.title {
-  padding: 20px;
-  margin-bottom: 10px;
-  text-align: justify;
-  box-shadow: 0px 0px 12px;
-  line-height: 1.25;
+.header__mainText, information__header, .about__header {
+    color: burlywood;
+    font-size: 25px;
 }
 
-.header {
-  background-color: burlywood;
-  color: #45af;
-  padding: 15px 50px;
-  margin: 0;
+/* plik game.css */
+
+.game {
+    position: fixed;
+    max-width: 400px;
+    right: 0;
+    text-align: center;
+    margin-top: 225px;
+    padding: 15px 10px 15px 20px;
+    background-color: #4577ED;
+    transition: .3s;
+}
+
+.game--closed {
+    right: -170px;
+}
+
+.game__header {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.game__menu, .game__menu--close {
+    display: block;
+    position: absolute;
+    width: 22px;
+    top: 5px;
+    padding: 3px;
+    font-size: 18px;
+    background-color: goldenrod;
+    border: none;
+    cursor: pointer;
+}
+
+.game__menu {
+    left: 3px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    word-wrap: break-word;
+}
+
+.game__menu--close {
+    right: 3px;
+}
+
+.game__header {
+    text-align: center;
+    width: 85%;
+    color: blueviolet;
+}
+
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    
 }
 
 .profile__image {
-  width: 300px;
-  background-color: #eee;
+    width: 400;
+    height: 400;
+    background-color: dimgray;
 }
 
-.subheading {
-  color: burlywood;
-  font-size: 25px;
+/* plik about.css */
+
+.about {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.background {
-  background-color: #2b2b2b;
-  color: #45af;
+.about__header {
+    margin: 25px auto;
+    font-size: 45px;
 }
 
-.change__button {
-  background-color: burlywood;
-  color: #45af;
-  padding: 10px;
-  width: 30%;
-  cursor: pointer;
-  border-radius: 15px;
-  outline: none;
-}
-
-.link {
-  color: burlywood;
-  font-size: 18px;
-}
-
-.gray {
-  background-color: #ddd;
+.about__text {
+    line-height: 1.5;
+    font-size: 22px;
+    text-shadow: 1px 2px 1px white;
 }
 
 .tableContainer {
-  overflow-x: auto;
+    overflow-x: auto;
 }
 
 .table {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #222;
-  font-size: 15px;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #222;
+    font-size: 15px;
 }
 
 .tableTitle {
-  text-align: left;
-  margin-bottom: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.table__name {
+    text-transform: uppercase;
+    font-size: 25px;
+    text-shadow: 1px 2px 1px rgb(255, 190, 190);
+    margin-bottom: 20px;
+}
+
+.table__data, .table__header {
+    border: 1px solid rgb(10, 10, 10);
+}
+
+.table__header {
+    text-transform: capitalize;
+    padding: 8px;
+    font-size: 22px;
+    max-width: 200px;
+    background-color: rgb(255, 149, 149);
 }
 
 .tableCell {
-  border: 1px solid #222;
-  padding: 10px;
-  text-align: center;
+    border: 1px solid #222;
+    padding: 10px;
+    text-align: center;
 }
 
 .tableRow:nth-child(odd) {
-  background-color: #45af;
+    background-color: #45af;
 }
 
 .tableRow:nth-child(even) {
-  background-color: #eee;
+    background-color: #eee;
 }
 
 .tableRow:hover {
-  background-color: #9fa3a3;
+    background-color: #9fa3a3;
 }
 
 .col {
-  background-color: burlywood;
+    background-color: burlywood;
 }
 
 .row {
-  background-color: #b0dfe0;
-  border: 1px solid #222;
+    background-color: #b0dfe0;
+    border: 1px solid #222;
 }
 
+/* plik footer.css */
+
 .footer {
-  text-align: center;
-  margin-top: 10px;
-  background-color: burlywood;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    color: blanchedalmond;
+    background-color: darkslategray;
+}
+
+.background {
+    background-color: #2b2b2b;
+    color: #45af;
+}
+
+.change__button {
+    background-color: burlywood;
+    color: #45af;
+    padding: 10px;
+    width: 30%;
+    cursor: pointer;
+    border-radius: 15px;
+    outline: none;
 }
