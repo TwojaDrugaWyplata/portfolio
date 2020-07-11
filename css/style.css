@@ -67,6 +67,7 @@ html {
 }
 
 .header {
+  text-align: center;
   background-color: burlywood;
   color: #45af;
   padding: 15px 50px;
