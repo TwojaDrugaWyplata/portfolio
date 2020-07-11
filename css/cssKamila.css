@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+.container {
+  background-color: goldenrod;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida", serif;
+}
+
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.navigation {
+  list-style-type: none;
+  /* próba ognia*/
+  overflow: hidden;
+  background-color: #333;
+  /* próba ognia*/
+}
+
+/* próba ognia*/
+
+.navigation a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* próba ognia*/
+}
+
+.navigationItem {
+  display: inline-block;
+  margin: 15px;
+  border: 1px solid transparent;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #45af;
+}
+
+.navigation__link:focus {
+  color: #582485;
+}
+
+.navigation__link:hover {
+  border-bottom: 1px solid burlywood;
+}
+
+.title {
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: justify;
+  box-shadow: 0px 0px 12px;
+  line-height: 1.25;
+}
+
+.header {
+  background-color: burlywood;
+  color: #45af;
+  padding: 15px 50px;
+  margin: 0;
+}
+
+.profile__image {
+  width: 300px;
+  background-color: #eee;
+}
+
+.subheading {
+  color: burlywood;
+  font-size: 25px;
+}
+
+.background {
+  background-color: #2b2b2b;
+  color: #45af;
+}
+
+.change__button {
+  background-color: burlywood;
+  color: #45af;
+  padding: 10px;
+  width: 30%;
+  cursor: pointer;
+  border-radius: 15px;
+  outline: none;
+}
+
+.link {
+  color: burlywood;
+  font-size: 18px;
+}
+
+.gray {
+  background-color: #ddd;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #222;
+  font-size: 15px;
+}
+
+.tableTitle {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.tableCell {
+  border: 1px solid #222;
+  padding: 10px;
+  text-align: center;
+}
+
+.tableRow:nth-child(odd) {
+  background-color: #45af;
+}
+
+.tableRow:nth-child(even) {
+  background-color: #eee;
+}
+
+.tableRow:hover {
+  background-color: #9fa3a3;
+}
+
+.col {
+  background-color: burlywood;
+}
+
+.row {
+  background-color: #b0dfe0;
+  border: 1px solid #222;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  background-color: burlywood;
+}
